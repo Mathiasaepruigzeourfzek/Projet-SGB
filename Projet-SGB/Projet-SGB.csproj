@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +55,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Etat.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAMILLE.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fichefrais.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FraisForfait.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
     <Compile Include="GSB.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GSB.Designer.cs">
       <DependentUpon>GSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSB_OKDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_OKDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratoire.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LigneFraisForfait.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LigneFraisHorsForfait.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEDECIN.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICAMENT.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
     <Compile Include="Mission1.cs">
       <SubType>Form</SubType>
@@ -70,8 +111,44 @@
     <Compile Include="Mission3.Designer.cs">
       <DependentUpon>Mission3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model_GSB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_GSB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_GSB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_GSB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_GSB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MOTIF.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OFFRIR.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RAPPORT.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Region.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Secteur.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPECIALITE.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Visiteur.cs">
+      <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +171,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="GSB_OKDataSet.xsc">
+      <DependentUpon>GSB_OKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSB_OKDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_OKDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSB_OKDataSet.xss">
+      <DependentUpon>GSB_OKDataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model_GSB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_GSB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model_GSB.edmx.diagram">
+      <DependentUpon>Model_GSB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +205,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model_GSB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model_GSB.Context.cs</LastGenOutput>
+      <DependentUpon>Model_GSB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model_GSB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_GSB.edmx</DependentUpon>
+      <LastGenOutput>Model_GSB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
