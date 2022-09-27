@@ -21,5 +21,23 @@ namespace Projet_SGB
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mission1 m1 = new Mission1();
+            m1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mission2 m2 = new Mission2();
+            m2.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Mission3 m3 = new Mission3();
+            m3.Show();
+        }
     }
 }
