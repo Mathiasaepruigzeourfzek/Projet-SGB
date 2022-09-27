@@ -16,7 +16,7 @@ namespace Projet_SGB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GSB());
+            Application.Run(new Form1());
         }
     }
 }

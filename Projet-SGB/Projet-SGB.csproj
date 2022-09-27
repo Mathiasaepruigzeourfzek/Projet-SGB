@@ -52,10 +52,37 @@
     <Compile Include="GSB.Designer.cs">
       <DependentUpon>GSB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mission1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mission1.Designer.cs">
+      <DependentUpon>Mission1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mission2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mission2.Designer.cs">
+      <DependentUpon>Mission2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mission3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mission3.Designer.cs">
+      <DependentUpon>Mission3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mission1.resx">
+      <DependentUpon>Mission1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mission2.resx">
+      <DependentUpon>Mission2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mission3.resx">
+      <DependentUpon>Mission3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
