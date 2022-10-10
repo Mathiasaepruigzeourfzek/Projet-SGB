@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'D:\Users\tbouron\Desktop\Romeuf\PPE3_GSB_2022\Mission 1\Projet-SGB\Projet-SGB\Model_GSB.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'X:\Romeuf\TP SGB\Projet-SGB\Projet-SGB\Model_GSB.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.
