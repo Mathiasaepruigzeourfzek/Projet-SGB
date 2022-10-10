@@ -111,6 +111,7 @@
     <Compile Include="Mission3.Designer.cs">
       <DependentUpon>Mission3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modele.cs" />
     <Compile Include="Model_GSB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -212,6 +213,7 @@
       <LastGenOutput>Model_GSB.Context.cs</LastGenOutput>
       <DependentUpon>Model_GSB.edmx</DependentUpon>
     </Content>
+    <Content Include="Model_GSB.edmx.sql" />
     <Content Include="Model_GSB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model_GSB.edmx</DependentUpon>

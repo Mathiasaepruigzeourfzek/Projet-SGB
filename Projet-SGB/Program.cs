@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Projet_SGB
 {
@@ -16,6 +17,7 @@ namespace Projet_SGB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Modele.init();
             Application.Run(new Form1());
         }
     }

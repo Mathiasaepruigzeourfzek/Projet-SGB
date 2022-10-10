@@ -39,5 +39,25 @@ namespace Projet_SGB
             Mission3 m3 = new Mission3();
             m3.Show();
         }
+
+        private void button_ok_Click(object sender, EventArgs e)
+        {
+            if(textBox_identifiant.Text == bindingSource_identifiant() && textBox_mdp.Text == "test")
+            {
+                Mission1 m1 = new Mission1();
+                m1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Mot de passe ou identifiant invalide");
+            }
+            
+            
+        }
+
+        private void bindingSource_identifiant_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

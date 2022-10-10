@@ -28,14 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox_identifiant = new System.Windows.Forms.TextBox();
+            this.textBox_mdp = new System.Windows.Forms.TextBox();
+            this.label_identifiant = new System.Windows.Forms.Label();
+            this.label_mdp = new System.Windows.Forms.Label();
+            this.button_ok = new System.Windows.Forms.Button();
+            this.bindingSource_identifiant = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource_mdp = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_identifiant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_mdp)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(88, 141);
+            this.button1.Location = new System.Drawing.Point(79, 402);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 79);
             this.button1.TabIndex = 0;
@@ -45,7 +55,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(345, 141);
+            this.button2.Location = new System.Drawing.Point(429, 402);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(157, 79);
             this.button2.TabIndex = 1;
@@ -55,7 +65,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(643, 141);
+            this.button3.Location = new System.Drawing.Point(764, 402);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 79);
             this.button3.TabIndex = 2;
@@ -63,18 +73,72 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // textBox_identifiant
+            // 
+            this.textBox_identifiant.Location = new System.Drawing.Point(461, 142);
+            this.textBox_identifiant.Name = "textBox_identifiant";
+            this.textBox_identifiant.Size = new System.Drawing.Size(100, 20);
+            this.textBox_identifiant.TabIndex = 3;
+            // 
+            // textBox_mdp
+            // 
+            this.textBox_mdp.Location = new System.Drawing.Point(461, 199);
+            this.textBox_mdp.Name = "textBox_mdp";
+            this.textBox_mdp.Size = new System.Drawing.Size(100, 20);
+            this.textBox_mdp.TabIndex = 4;
+            // 
+            // label_identifiant
+            // 
+            this.label_identifiant.AutoSize = true;
+            this.label_identifiant.Location = new System.Drawing.Point(396, 145);
+            this.label_identifiant.Name = "label_identifiant";
+            this.label_identifiant.Size = new System.Drawing.Size(59, 13);
+            this.label_identifiant.TabIndex = 5;
+            this.label_identifiant.Text = "Identifiant :";
+            // 
+            // label_mdp
+            // 
+            this.label_mdp.AutoSize = true;
+            this.label_mdp.Location = new System.Drawing.Point(378, 202);
+            this.label_mdp.Name = "label_mdp";
+            this.label_mdp.Size = new System.Drawing.Size(77, 13);
+            this.label_mdp.TabIndex = 6;
+            this.label_mdp.Text = "Mot de passe :";
+            // 
+            // button_ok
+            // 
+            this.button_ok.Location = new System.Drawing.Point(475, 244);
+            this.button_ok.Name = "button_ok";
+            this.button_ok.Size = new System.Drawing.Size(75, 23);
+            this.button_ok.TabIndex = 7;
+            this.button_ok.Text = "OK";
+            this.button_ok.UseVisualStyleBackColor = true;
+            this.button_ok.Click += new System.EventHandler(this.button_ok_Click);
+            // 
+            // bindingSource_identifiant
+            // 
+            this.bindingSource_identifiant.CurrentChanged += new System.EventHandler(this.bindingSource_identifiant_CurrentChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 559);
+            this.Controls.Add(this.button_ok);
+            this.Controls.Add(this.label_mdp);
+            this.Controls.Add(this.label_identifiant);
+            this.Controls.Add(this.textBox_mdp);
+            this.Controls.Add(this.textBox_identifiant);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "RAPPORT_VISITE";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_identifiant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_mdp)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +147,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox_identifiant;
+        private System.Windows.Forms.TextBox textBox_mdp;
+        private System.Windows.Forms.Label label_identifiant;
+        private System.Windows.Forms.Label label_mdp;
+        private System.Windows.Forms.Button button_ok;
+        private System.Windows.Forms.BindingSource bindingSource_identifiant;
+        private System.Windows.Forms.BindingSource bindingSource_mdp;
     }
 }
 
