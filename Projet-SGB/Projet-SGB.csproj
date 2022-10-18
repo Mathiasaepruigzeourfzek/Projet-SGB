@@ -64,6 +64,18 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Form_info_perso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_info_perso.Designer.cs">
+      <DependentUpon>Form_info_perso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_modif_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_modif_info.Designer.cs">
+      <DependentUpon>Form_modif_info.cs</DependentUpon>
+    </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -150,6 +162,12 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_info_perso.resx">
+      <DependentUpon>Form_info_perso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_modif_info.resx">
+      <DependentUpon>Form_modif_info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
     </EmbeddedResource>
