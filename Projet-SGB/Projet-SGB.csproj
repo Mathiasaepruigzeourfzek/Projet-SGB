@@ -55,12 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlefiche.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controlefiche.Designer.cs">
-      <DependentUpon>Controlefiche.cs</DependentUpon>
-    </Compile>
     <Compile Include="Etat.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -69,6 +63,12 @@
     </Compile>
     <Compile Include="fichefrais.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fichepaye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fichepaye.Designer.cs">
+      <DependentUpon>Fichepaye.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_info_perso.cs">
       <SubType>Form</SubType>
@@ -176,8 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="page_connexion.resx">
       <DependentUpon>page_connexion.cs</DependentUpon>
-    <EmbeddedResource Include="Controlefiche.resx">
-      <DependentUpon>Controlefiche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fichepaye.resx">
       <DependentUpon>Fichepaye.cs</DependentUpon>
@@ -185,7 +183,6 @@
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
     </EmbeddedResource>
-  
     <EmbeddedResource Include="page_accueil.resx">
       <DependentUpon>page_accueil.cs</DependentUpon>
     </EmbeddedResource>
