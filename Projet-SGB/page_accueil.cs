@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Projet_SGB
 {
-    public partial class Mission1 : Form
+    public partial class page_accueil : Form
     {
         public Visiteur user_courant;
-        public Mission1()
+        public page_accueil()
         {
             InitializeComponent();
         }

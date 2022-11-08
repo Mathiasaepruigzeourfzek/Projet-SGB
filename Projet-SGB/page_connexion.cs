@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet_SGB
 {
-    public partial class Form1 : Form
+    public partial class page_connexion : Form
     {
-        public Form1()
+        public page_connexion()
         {
             InitializeComponent();
         }
@@ -32,24 +32,6 @@ namespace Projet_SGB
             dataGridView_mdp.Columns[9].Visible = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Mission1 m1 = new Mission1();
-            m1.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Mission2 m2 = new Mission2();
-            m2.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Mission3 m3 = new Mission3();
-            m3.Show();
-        }
-
         //$requete='select * from user where login="'.$login.'" and mdpcryp=MD5("'.$password.'");';
 		//$result=$connexion ->query($requete);
 
@@ -61,7 +43,7 @@ namespace Projet_SGB
                 {
                     if(mdp_visiteur.identifiant == textBox_identifiant.Text)
                     {
-                        Mission1 m1 = new Mission1();
+                        page_accueil m1 = new page_accueil();
                         m1.user_courant = mdp_visiteur;
                         m1.Show();
                         break;
@@ -89,7 +71,7 @@ namespace Projet_SGB
 
         private void textBox_mdp_TextChanged(object sender, EventArgs e)
         {
-            textBox_hash.Text = Modele.GetMd5Hash(textBox_mdp.Text);
+
         }
 
         private void bindingSource_mdp_CurrentChanged(object sender, EventArgs e)

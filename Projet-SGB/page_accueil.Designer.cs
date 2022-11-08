@@ -1,6 +1,6 @@
 ﻿namespace Projet_SGB
 {
-    partial class Mission1
+    partial class page_accueil
     {
         /// <summary>
         /// Required designer variable.
@@ -37,9 +37,9 @@
             this.modifierVotreMotDePasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historiqueDesBudjetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualiserVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,12 +115,6 @@
             this.visualiserVisiteursToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.visualiserVisiteursToolStripMenuItem.Text = "Visualiser visiteurs";
             // 
-            // déconnexionToolStripMenuItem
-            // 
-            this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.déconnexionToolStripMenuItem.Text = "Déconnexion";
-            // 
             // mission2ToolStripMenuItem
             // 
             this.mission2ToolStripMenuItem.Name = "mission2ToolStripMenuItem";
@@ -133,7 +127,13 @@
             this.mission3ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.mission3ToolStripMenuItem.Text = "Mission3";
             // 
-            // Mission1
+            // déconnexionToolStripMenuItem
+            // 
+            this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
+            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.déconnexionToolStripMenuItem.Text = "Déconnexion";
+            // 
+            // page_accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,8 +142,8 @@
             this.Controls.Add(this.textBox_nom_user_courant);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Mission1";
-            this.Text = "Mission1";
+            this.Name = "page_accueil";
+            this.Text = "Page d\'accueil";
             this.Load += new System.EventHandler(this.Mission1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
