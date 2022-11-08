@@ -40,5 +40,10 @@ namespace Projet_SGB
             ip.user_courant = user_courant;
             ip.Show();
         }
+
+        private void consultationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
