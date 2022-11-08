@@ -37,13 +37,18 @@ namespace Projet_SGB
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FCompteRendu FlesCompteRendu = new FCompteRendu();
-            FlesCompteRendu.Show();
+            
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void compteRenduToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCompteRendu FlesCompteRendu = new FCompteRendu();
+            FlesCompteRendu.Show();
         }
     }
 }
