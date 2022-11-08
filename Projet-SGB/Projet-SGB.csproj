@@ -64,14 +64,26 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Form_info_perso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_info_perso.Designer.cs">
+      <DependentUpon>Form_info_perso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_modif_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_modif_info.Designer.cs">
+      <DependentUpon>Form_modif_info.cs</DependentUpon>
+    </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
-    <Compile Include="GSB.cs">
+    <Compile Include="page_connexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GSB.Designer.cs">
-      <DependentUpon>GSB.cs</DependentUpon>
+    <Compile Include="page_connexion.Designer.cs">
+      <DependentUpon>page_connexion.cs</DependentUpon>
     </Compile>
     <Compile Include="GSB_OKDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,11 +105,11 @@
     <Compile Include="MEDICAMENT.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Mission1.cs">
+    <Compile Include="page_accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mission1.Designer.cs">
-      <DependentUpon>Mission1.cs</DependentUpon>
+    <Compile Include="page_accueil.Designer.cs">
+      <DependentUpon>page_accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Mission2.cs">
       <SubType>Form</SubType>
@@ -150,11 +162,17 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GSB.resx">
-      <DependentUpon>GSB.cs</DependentUpon>
+    <EmbeddedResource Include="Form_info_perso.resx">
+      <DependentUpon>Form_info_perso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mission1.resx">
-      <DependentUpon>Mission1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_modif_info.resx">
+      <DependentUpon>Form_modif_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_connexion.resx">
+      <DependentUpon>page_connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_accueil.resx">
+      <DependentUpon>page_accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mission2.resx">
       <DependentUpon>Mission2.cs</DependentUpon>
