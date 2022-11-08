@@ -34,12 +34,14 @@
             this.médecinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicamentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motifRDVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.gSB_OKDataSet = new Projet_SGB.GSB_OKDataSet();
             this.gSBOKDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gSB_OKDataSet = new Projet_SGB.GSB_OKDataSet();
+            this.compteRenduToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CompteRendu = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gSB_OKDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gSBOKDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSB_OKDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompteRendu)).BeginInit();
             this.SuspendLayout();
             // 
             // test
@@ -55,7 +57,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.médecinToolStripMenuItem,
             this.médicamentsToolStripMenuItem,
-            this.motifRDVToolStripMenuItem});
+            this.motifRDVToolStripMenuItem,
+            this.compteRenduToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -81,31 +84,28 @@
             this.motifRDVToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.motifRDVToolStripMenuItem.Text = "Motif RDV";
             // 
-            // comboBox1
+            // gSBOKDataSetBindingSource
             // 
-            this.comboBox1.DataSource = this.gSBOKDataSetBindingSource;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(55, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.gSBOKDataSetBindingSource.DataSource = this.gSB_OKDataSet;
+            this.gSBOKDataSetBindingSource.Position = 0;
             // 
             // gSB_OKDataSet
             // 
             this.gSB_OKDataSet.DataSetName = "GSB_OKDataSet";
             this.gSB_OKDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // gSBOKDataSetBindingSource
+            // compteRenduToolStripMenuItem
             // 
-            this.gSBOKDataSetBindingSource.DataSource = this.gSB_OKDataSet;
-            this.gSBOKDataSetBindingSource.Position = 0;
+            this.compteRenduToolStripMenuItem.Name = "compteRenduToolStripMenuItem";
+            this.compteRenduToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.compteRenduToolStripMenuItem.Text = "Compte-Rendu";
+            this.compteRenduToolStripMenuItem.Click += new System.EventHandler(this.compteRenduToolStripMenuItem_Click);
             // 
             // Mission2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.test);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -114,8 +114,9 @@
             this.Load += new System.EventHandler(this.Mission2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gSB_OKDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gSBOKDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSB_OKDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompteRendu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,8 +129,9 @@
         private System.Windows.Forms.ToolStripMenuItem médecinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem médicamentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem motifRDVToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.BindingSource gSBOKDataSetBindingSource;
         private GSB_OKDataSet gSB_OKDataSet;
+        private System.Windows.Forms.ToolStripMenuItem compteRenduToolStripMenuItem;
+        private System.Windows.Forms.BindingSource CompteRendu;
     }
 }

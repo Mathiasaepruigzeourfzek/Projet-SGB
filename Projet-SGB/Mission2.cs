@@ -27,19 +27,28 @@ namespace Projet_SGB
 
         }
 
+<<<<<<< Updated upstream
         private void médicamentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> Stashed changes
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void compteRenduToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCompteRendu FlesCompteRendu = new FCompteRendu();
+            FlesCompteRendu.Show();
         }
     }
 }

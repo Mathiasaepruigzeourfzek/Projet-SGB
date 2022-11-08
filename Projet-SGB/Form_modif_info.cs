@@ -30,6 +30,7 @@ namespace Projet_SGB
 
         private void button_valider_Click(object sender, EventArgs e)
         {
+
             this.Close();
         }
     }
