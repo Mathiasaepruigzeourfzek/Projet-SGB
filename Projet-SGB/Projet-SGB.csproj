@@ -185,6 +185,7 @@
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
     </EmbeddedResource>
+  
     <EmbeddedResource Include="page_accueil.resx">
       <DependentUpon>page_accueil.cs</DependentUpon>
     </EmbeddedResource>
