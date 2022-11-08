@@ -21,5 +21,17 @@ namespace Projet_SGB
         {
 
         }
+
+        private void btnconsulterpaye_Click(object sender, EventArgs e)
+        {
+            Controlefiche cf = new Controlefiche();
+            cf.Show();
+        }
+
+        private void btnfichepaye_Click(object sender, EventArgs e)
+        {
+            Fichepaye fp = new Fichepaye();
+            fp.Show();
+        }
     }
 }

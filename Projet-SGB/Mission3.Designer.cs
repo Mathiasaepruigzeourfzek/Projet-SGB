@@ -28,24 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnconsulterpaye = new System.Windows.Forms.Button();
+            this.btnfichepaye = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnconsulterpaye
             // 
-            this.button1.Location = new System.Drawing.Point(514, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnconsulterpaye.Location = new System.Drawing.Point(448, 165);
+            this.btnconsulterpaye.Name = "btnconsulterpaye";
+            this.btnconsulterpaye.Size = new System.Drawing.Size(185, 48);
+            this.btnconsulterpaye.TabIndex = 1;
+            this.btnconsulterpaye.Text = "Consulter fiche de paye";
+            this.btnconsulterpaye.UseVisualStyleBackColor = true;
+            this.btnconsulterpaye.Click += new System.EventHandler(this.btnconsulterpaye_Click);
+            // 
+            // btnfichepaye
+            // 
+            this.btnfichepaye.Location = new System.Drawing.Point(164, 165);
+            this.btnfichepaye.Name = "btnfichepaye";
+            this.btnfichepaye.Size = new System.Drawing.Size(185, 48);
+            this.btnfichepaye.TabIndex = 2;
+            this.btnfichepaye.Text = "Fiche de paye";
+            this.btnfichepaye.UseVisualStyleBackColor = true;
+            this.btnfichepaye.Click += new System.EventHandler(this.btnfichepaye_Click);
             // 
             // Mission3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnfichepaye);
+            this.Controls.Add(this.btnconsulterpaye);
             this.Name = "Mission3";
             this.Text = "Mission3";
             this.Load += new System.EventHandler(this.Mission3_Load);
@@ -54,7 +67,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnconsulterpaye;
+        private System.Windows.Forms.Button btnfichepaye;
     }
 }

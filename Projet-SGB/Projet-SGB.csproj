@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlefiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controlefiche.Designer.cs">
+      <DependentUpon>Controlefiche.cs</DependentUpon>
+    </Compile>
     <Compile Include="Etat.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="fichefrais.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fichepaye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fichepaye.Designer.cs">
+      <DependentUpon>Fichepaye.cs</DependentUpon>
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
@@ -149,6 +161,12 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controlefiche.resx">
+      <DependentUpon>Controlefiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fichepaye.resx">
+      <DependentUpon>Fichepaye.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GSB.resx">
       <DependentUpon>GSB.cs</DependentUpon>
     </EmbeddedResource>
