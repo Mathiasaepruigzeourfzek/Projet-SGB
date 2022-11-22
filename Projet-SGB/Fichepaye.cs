@@ -12,6 +12,7 @@ namespace Projet_SGB
 {
     public partial class Fichepaye : Form
     {
+        public Visiteur user_courant;
         public Fichepaye()
         {
             InitializeComponent();
@@ -63,6 +64,26 @@ namespace Projet_SGB
         }
 
         private void richTextBox20_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbMatriculevisiteur_TextChanged(object sender, EventArgs e)
         {
 
         }

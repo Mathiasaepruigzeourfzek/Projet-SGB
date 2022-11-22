@@ -45,5 +45,22 @@ namespace Projet_SGB
         {
 
         }
+
+        private void ficheDeFraisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fichepaye fp = new Fichepaye();
+            fp.user_courant = user_courant;
+            fp.Show();
+        }
+
+        private void mission3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultéFicheToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

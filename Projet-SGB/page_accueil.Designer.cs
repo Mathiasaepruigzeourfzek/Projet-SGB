@@ -126,6 +126,7 @@
             this.mission3ToolStripMenuItem.Name = "mission3ToolStripMenuItem";
             this.mission3ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.mission3ToolStripMenuItem.Text = "Mission3";
+            this.mission3ToolStripMenuItem.Click += new System.EventHandler(this.mission3ToolStripMenuItem_Click);
             // 
             // déconnexionToolStripMenuItem
             // 
