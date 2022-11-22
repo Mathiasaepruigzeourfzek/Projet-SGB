@@ -101,6 +101,7 @@
             this.modifierVotreMotDePasseToolStripMenuItem.Name = "modifierVotreMotDePasseToolStripMenuItem";
             this.modifierVotreMotDePasseToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.modifierVotreMotDePasseToolStripMenuItem.Text = "Modifier votre mot de passe";
+            this.modifierVotreMotDePasseToolStripMenuItem.Click += new System.EventHandler(this.modifierVotreMotDePasseToolStripMenuItem_Click);
             // 
             // historiqueDesBudjetsToolStripMenuItem
             // 

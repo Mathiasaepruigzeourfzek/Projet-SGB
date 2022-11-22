@@ -62,5 +62,10 @@ namespace Projet_SGB
         {
 
         }
+
+        private void modifierVotreMotDePasseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
