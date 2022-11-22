@@ -86,17 +86,19 @@ namespace Projet_SGB
             fp.Show();
         }
 
-        private void mission3ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void consultéFicheToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void modifierVotreMotDePasseToolStripMenuItem_Click(object sender, EventArgs e)
+        private void textBox_nom_user_courant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_prenom_user_courant_TextChanged(object sender, EventArgs e)
         {
 
         }

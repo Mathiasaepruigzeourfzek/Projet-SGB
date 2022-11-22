@@ -36,11 +36,13 @@
             this.résponsabilitéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierVotreMotDePasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualiserVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichePayeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichePayeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.okToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.textBox_nom_user_courant.Name = "textBox_nom_user_courant";
             this.textBox_nom_user_courant.Size = new System.Drawing.Size(189, 20);
             this.textBox_nom_user_courant.TabIndex = 0;
+            this.textBox_nom_user_courant.TextChanged += new System.EventHandler(this.textBox_nom_user_courant_TextChanged);
             // 
             // textBox_prenom_user_courant
             // 
@@ -57,6 +60,7 @@
             this.textBox_prenom_user_courant.Name = "textBox_prenom_user_courant";
             this.textBox_prenom_user_courant.Size = new System.Drawing.Size(189, 20);
             this.textBox_prenom_user_courant.TabIndex = 1;
+            this.textBox_prenom_user_courant.TextChanged += new System.EventHandler(this.textBox_prenom_user_courant_TextChanged);
             // 
             // menuStrip1
             // 
@@ -64,7 +68,8 @@
             this.consultationToolStripMenuItem,
             this.mission2ToolStripMenuItem,
             this.mission3ToolStripMenuItem,
-            this.déconnexionToolStripMenuItem});
+            this.déconnexionToolStripMenuItem,
+            this.fichePayeToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1397, 24);
@@ -110,6 +115,14 @@
             this.visualiserVisiteursToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.visualiserVisiteursToolStripMenuItem.Text = "Visualiser visiteurs";
             // 
+            // mettreAJourLesInformationsDuSecteurToolStripMenuItem
+            // 
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Name = "mettreAJourLesInformationsDuSecteurToolStripMenuItem";
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Text = "Mettre a jour les informations du secteur";
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Click += new System.EventHandler(this.mettreAJourLesInformationsDuSecteurToolStripMenuItem_Click);
+            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.VisibleChanged += new System.EventHandler(this.mettreAJourLesInformationsDuSecteurToolStripMenuItem_VisibleChanged);
+            // 
             // mission2ToolStripMenuItem
             // 
             this.mission2ToolStripMenuItem.Name = "mission2ToolStripMenuItem";
@@ -125,25 +138,31 @@
             this.mission3ToolStripMenuItem.Text = "Mission3";
             this.mission3ToolStripMenuItem.Click += new System.EventHandler(this.mission3ToolStripMenuItem_Click);
             // 
+            // fichePayeToolStripMenuItem
+            // 
+            this.fichePayeToolStripMenuItem.Name = "fichePayeToolStripMenuItem";
+            this.fichePayeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fichePayeToolStripMenuItem.Text = "Fiche paye";
+            // 
             // déconnexionToolStripMenuItem
             // 
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
             this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.déconnexionToolStripMenuItem.Text = "Déconnexion";
             // 
-            // mettreAJourLesInformationsDuSecteurToolStripMenuItem
+            // fichePayeToolStripMenuItem1
             // 
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Name = "mettreAJourLesInformationsDuSecteurToolStripMenuItem";
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Text = "Mettre a jour les informations du secteur";
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.Click += new System.EventHandler(this.mettreAJourLesInformationsDuSecteurToolStripMenuItem_Click);
-            this.mettreAJourLesInformationsDuSecteurToolStripMenuItem.VisibleChanged += new System.EventHandler(this.mettreAJourLesInformationsDuSecteurToolStripMenuItem_VisibleChanged);
+            this.fichePayeToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.okToolStripMenuItem});
+            this.fichePayeToolStripMenuItem1.Name = "fichePayeToolStripMenuItem1";
+            this.fichePayeToolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
+            this.fichePayeToolStripMenuItem1.Text = "fiche paye";
             // 
-            // fichePayeToolStripMenuItem
+            // okToolStripMenuItem
             // 
-            this.fichePayeToolStripMenuItem.Name = "fichePayeToolStripMenuItem";
-            this.fichePayeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fichePayeToolStripMenuItem.Text = "Fiche paye";
+            this.okToolStripMenuItem.Name = "okToolStripMenuItem";
+            this.okToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.okToolStripMenuItem.Text = "ok";
             // 
             // page_accueil
             // 
@@ -179,5 +198,7 @@
         private System.Windows.Forms.ToolStripMenuItem mission3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mettreAJourLesInformationsDuSecteurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichePayeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fichePayeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem okToolStripMenuItem;
     }
 }
