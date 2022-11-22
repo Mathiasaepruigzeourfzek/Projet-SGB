@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Projet_SGB
 {
@@ -26,14 +27,10 @@ namespace Projet_SGB
             {
                 dataGridView_mdp.Columns[i].Visible = false;
             }
-            dataGridView_mdp.Columns[2].Visible = true;
             dataGridView_mdp.Columns[3].Visible = true;
             dataGridView_mdp.Columns[8].Visible = true;
             dataGridView_mdp.Columns[9].Visible = true;
         }
-
-        //$requete='select * from user where login="'.$login.'" and mdpcryp=MD5("'.$password.'");';
-		//$result=$connexion ->query($requete);
 
         private void button_ok_Click(object sender, EventArgs e)
         {

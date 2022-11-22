@@ -10,8 +10,8 @@ namespace Projet_SGB
     internal static class Modele
     {
         private static Connect_GSB ma_connexion;
-        private static Visiteur utilisateurConnecte;
-        private static bool connexionValide;
+        private static Visiteur utilisateur_connecte;
+        private static bool connexion_valide;
 
 
         public static void init()
@@ -43,6 +43,54 @@ namespace Projet_SGB
         public static List<Visiteur> listeVisiteur()
         {
             return ma_connexion.Visiteur.ToList();
+        }
+
+        public static bool modif_info(Visiteur visiteur_courant, string nom, string prenom, string rue, string code_postal, string ville)
+        {
+            /*
+            requetes inutiles
+
+            var requete_nom = "update Visiteur set nom = '" + nom + "' where Visiteur.idVisiteur = '" + nom +"';";
+            var requete_prenom = "update Visiteur set prenom = '" + prenom + "' where Visiteur.idVisiteur = '" + nom + "';";
+            var requete_rue = "update Visiteur set rue = '" + rue + "' where Visiteur.idVisiteur = '" + nom + "';";
+            var requete_code_postal = "update Visiteur set code_postal = '" + code_postal + "' where Visiteur.idVisiteur = '" + nom + "';";
+            var requete_ville = "update Visiteur set ville = '" + ville + "' where Visiteur.idVisiteur = '" + nom + "';";*/
+
+            try
+            {
+                visiteur_courant.nom = nom;
+                visiteur_courant.prenom = prenom;
+                visiteur_courant.rue = rue;
+                visiteur_courant.cp = code_postal;
+                visiteur_courant.ville = ville;
+
+                ma_connexion.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + " " + ex.InnerException.Message);
+                return false;
+            }
+            return true;
+        }
+
+        public static bool modif_mdp(Visiteur visiteur_courant, string mdp_actuel, string nv_mdp, string conf_nv_mdp)
+        {
+            try
+            {
+                if(visiteur_courant.password == Modele.GetMd5Hash(mdp_actuel) && nv_mdp == conf_nv_mdp)
+                {
+                    visiteur_courant.password = Modele.GetMd5Hash(nv_mdp);
+
+                    ma_connexion.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + " " + ex.InnerException.Message);
+                return false;
+            }
+            return true;
         }
     }
 }
