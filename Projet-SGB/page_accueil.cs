@@ -22,6 +22,12 @@ namespace Projet_SGB
         {
             textBox_nom_user_courant.Text = user_courant.nom;
             textBox_prenom_user_courant.Text = user_courant.prenom;
+
+            /*if (user_courant.idVisiteur == Modele.listeVisiteur())
+            {
+                mettreAJourLesInformationsDuSecteurToolStripMenuItem.Enabled = false;
+                mettreAJourLesInformationsDuSecteurToolStripMenuItem.Visible = false;
+            }*/
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,6 +48,33 @@ namespace Projet_SGB
         }
 
         private void consultationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifierVotreMotDePasseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_modif_mdp mm = new Form_modif_mdp();
+            mm.user_courant = user_courant;
+            mm.ShowDialog();
+        }
+
+        private void mettreAJourLesInformationsDuSecteurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mettreAJourLesInformationsDuSecteurToolStripMenuItem_VisibleChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mission3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ficheToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

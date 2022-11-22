@@ -30,7 +30,7 @@ namespace Projet_SGB
 
         private void button_valider_Click(object sender, EventArgs e)
         {
-
+            Modele.modif_info(user_courant, textBox_nom.Text, textBox_prenom.Text, textBox_rue.Text, textBox_cp.Text, textBox_ville.Text);
             this.Close();
         }
     }
