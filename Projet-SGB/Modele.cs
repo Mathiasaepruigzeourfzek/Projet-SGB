@@ -45,6 +45,16 @@ namespace Projet_SGB
             return ma_connexion.Visiteur.ToList();
         }
 
+        public static List<Secteur> listeSecteur()
+        {
+            return ma_connexion.Secteur.ToList();
+        }
+
+        public static List<Region> listeRegion()
+        {
+            return ma_connexion.Region.ToList();
+        }
+
         public static bool modif_info(Visiteur visiteur_courant, string nom, string prenom, string rue, string code_postal, string ville)
         {
             /*
@@ -67,6 +77,27 @@ namespace Projet_SGB
                 ma_connexion.SaveChanges();
             }
             catch(Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + " " + ex.InnerException.Message);
+                return false;
+            }
+            return true;
+        }
+
+        public static bool modif_responsable_region(int id_region, string id_nouveau_responsable)
+        {
+            try
+            {
+                foreach (Region region in Modele.listeRegion())
+                {
+                    if (region.idRegion == id_region)
+                    {
+                        region.idVisiteur = id_nouveau_responsable;
+                        ma_connexion.SaveChanges();
+                    }
+                } 
+            }
+            catch (Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message + " " + ex.InnerException.Message);
                 return false;

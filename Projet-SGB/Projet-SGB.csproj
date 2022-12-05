@@ -70,6 +70,12 @@
     <Compile Include="Form_info_perso.Designer.cs">
       <DependentUpon>Form_info_perso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_info_secteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_info_secteur.Designer.cs">
+      <DependentUpon>Form_info_secteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_modif_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="Form_modif_mdp.Designer.cs">
       <DependentUpon>Form_modif_mdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_modif_responsable_region.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_modif_responsable_region.Designer.cs">
+      <DependentUpon>Form_modif_responsable_region.cs</DependentUpon>
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
@@ -171,11 +183,17 @@
     <EmbeddedResource Include="Form_info_perso.resx">
       <DependentUpon>Form_info_perso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_info_secteur.resx">
+      <DependentUpon>Form_info_secteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_modif_info.resx">
       <DependentUpon>Form_modif_info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_modif_mdp.resx">
       <DependentUpon>Form_modif_mdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_modif_responsable_region.resx">
+      <DependentUpon>Form_modif_responsable_region.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="page_connexion.resx">
       <DependentUpon>page_connexion.cs</DependentUpon>

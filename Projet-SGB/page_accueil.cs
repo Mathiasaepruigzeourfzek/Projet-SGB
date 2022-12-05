@@ -23,11 +23,21 @@ namespace Projet_SGB
             textBox_nom_user_courant.Text = user_courant.nom;
             textBox_prenom_user_courant.Text = user_courant.prenom;
 
-            /*if (user_courant.idVisiteur == Modele.listeVisiteur())
+            mettreAJourLesInformationsDuSecteurToolStripMenuItem.Enabled = false;
+            mettreAJourLesInformationsDuSecteurToolStripMenuItem.Visible = false;
+
+            foreach (Visiteur visiteur in Modele.listeVisiteur())
             {
-                mettreAJourLesInformationsDuSecteurToolStripMenuItem.Enabled = false;
-                mettreAJourLesInformationsDuSecteurToolStripMenuItem.Visible = false;
-            }*/
+                foreach (Secteur secteur in Modele.listeSecteur())
+                {
+                    if (secteur.idVisiteur == user_courant.idVisiteur)
+                    {
+                        mettreAJourLesInformationsDuSecteurToolStripMenuItem.Enabled = true;
+                        mettreAJourLesInformationsDuSecteurToolStripMenuItem.Visible = true;
+                        break;
+                    }
+                }     
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -61,7 +71,9 @@ namespace Projet_SGB
 
         private void mettreAJourLesInformationsDuSecteurToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form_info_secteur iss = new Form_info_secteur();
+            iss.user_courant = user_courant;
+            iss.Show();
         }
 
         private void mettreAJourLesInformationsDuSecteurToolStripMenuItem_VisibleChanged(object sender, EventArgs e)
